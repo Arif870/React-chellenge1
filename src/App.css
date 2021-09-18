@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.blog {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 20px auto;
+  width: 80%;
+  color: rgb(227, 248, 241);
+  background-color: brown;
+  padding: 10px;
+  border-radius: 10px;
+}

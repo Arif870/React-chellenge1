@@ -11,7 +11,7 @@ function App() {
 function Blog() {
   return (
     <div>
-      <article>
+      <article className="blog">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem rerum
         quae obcaecati eius maxime laboriosam id consequuntur consequatur ipsam
         et.
