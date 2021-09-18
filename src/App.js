@@ -22,6 +22,18 @@ function Blog() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem rerum
         quae obcaecati eius maxime laboriosam id consequuntur consequatur ipsam
         et.
+        <p
+          style={{
+            textAlign: "center",
+            backgroundColor: "green",
+            padding: "20px",
+            borderRadius: "10px",
+            fontSize: "24px",
+            fontWeight: "300",
+          }}
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, animi?
+        </p>
       </article>
     </div>
   );
