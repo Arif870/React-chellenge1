@@ -1,10 +1,11 @@
 import "./App.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   return (
     <div className="App">
       <Mobile />
+      <Todo />
     </div>
   );
 }
@@ -30,5 +31,25 @@ function Mobile() {
 }
 
 // to do api call
+
+function Todo() {
+  let [lists, setList] = useState([]);
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/todos")
+      .then(response => response.json())
+      .then(data => setList(data));
+  }, []);
+
+  return (
+    <div>
+      {lists.map(list => (
+        <p>
+          <span>{list.id} : </span> {list.title}
+        </p>
+      ))}
+    </div>
+  );
+}
 
 export default App;
